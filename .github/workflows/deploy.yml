@@ -1,0 +1,18 @@
+name: cd
+
+on:
+  workflow_dispatch:
+
+env:
+  DOCKER_USERNAME: sanvu
+  DOCKER_PASSWORD: ${{ secrets.PASS1 }}
+  IMAGE_TAG: ${{ github.sha }}
+
+jobs:
+  deploy:
+    runs-on: MAC
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 'cd'
+        run: docker compose up -d --force-recreate
