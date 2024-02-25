@@ -1,4 +1,5 @@
 FROM golang:1.20
-COPY main .
-RUN chmod +x ./main
-CMD ["./main"]
+COPY main.go .
+COPY go.mod .
+RUN chmod +x ./main.go
+CMD ["./main.go"]
