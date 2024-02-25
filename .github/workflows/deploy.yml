@@ -10,7 +10,7 @@ env:
 
 jobs:
   deploy:
-    runs-on: MAC
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
 
