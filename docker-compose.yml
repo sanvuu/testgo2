@@ -1,6 +1,6 @@
 version: "3"
 services:
   myapp:
-    image: ${DOCKER_USERNAME}/test:${IMAGE_TAG}
+    image: test:go
     ports:
       - "8080:8080"
