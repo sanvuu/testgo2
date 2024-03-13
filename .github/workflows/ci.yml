@@ -1,4 +1,4 @@
-name: Build Image via Golang
+name: ci
 
 env:
   DOCKER_USERNAME: sanvu
